@@ -1,21 +1,38 @@
-<h1>Burgers!</h1>
 
-<h2>Eat-Da-Burger!</h2>
+<div class ="burger-image"> 
+<img src="https://img.cinemablend.com/filter:scale/quill/9/6/6/3/7/a/96637aabb562881adec1336c0d78acc6cc5d1403.jpg?fw=1200" alt="Krabby Patty" width="300" height="200">
+</div>
+
+<h1>Eat-Da-Burger!</h1>
+
+{{!-- Prints each each burger --}}
+
+<h3>Burgers that are not devoured!</h3>
 
 <ul>
   {{#each burgers}}
-    
+    {{#unless ready}}
+      {{> burgers/burgers-block devoured=true}}
+    {{/unless}}
   {{/each}}
 </ul>
 
+<h3>Burgers that are devoured!</h3>
+<ul>
+  {{#each burgers}}
+    {{#if ready}}
+      {{> burgers/burgers-block devoured=false}}
+    {{/if}}
+  {{/each}}
+</ul>
 
-<h2>Add a Burger</h2>
 <form class="create-form">
-
   <div class="form-group">
-    <label for="burger-form">Burger Name:</label>
-    <input type="text" id="burger-form" name="name">
+    <label for="burger-name"></label>
+    <textarea class="form-control" id="burger-name" rows="3"></textarea>
   </div>
-
-  <button type="submit">Submit</button>
 </form>
+
+<button type="button" class="btn btn-warning">Submit</button>
+
+<h3></br>Enter a burger you want to eat. Click the "submit" button.</h3>
