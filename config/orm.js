@@ -1,3 +1,4 @@
+// console.log('This is the ORM for burgers');
 // Import MySQL connection.
 var connection = require('../config/connection.js');
 
@@ -79,7 +80,6 @@ var orm = {
     queryString += ' WHERE ';
     queryString += condition;
 
-    console.log(queryString);
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
