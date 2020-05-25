@@ -6,8 +6,7 @@
 <h1>Eat-Da-Burger!</h1>
 
 {{!-- Prints each each burger --}}
-
-<h3>Burgers that are not devoured!</h3>
+<h3>Burgers that are devoured!</h3>
 
 <ul>
   {{#each burgers}}
@@ -17,7 +16,8 @@
   {{/each}}
 </ul>
 
-<h3>Burgers that are devoured!</h3>
+<h3>Burgers that are not devoured!</h3>
+
 <ul>
   {{#each burgers}}
     {{#if devoured}}
