@@ -2,18 +2,18 @@
 
 # Eat-Da-Burger 
 
-*  In this assignment, I created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Followed the MVC design pattern; used Node and MySQL to query and route data in the app, and Handlebars to generate HTML.
+In this assignment, I created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Followed the MVC design pattern; used Node and MySQL to query and route data in the app, and Handlebars to generate HTML.
 
 # Table of Contents 
 
-## Learning Objectives
-## Development Process 
-## User Story
-## Summary of Topics Covered
-## Comprehension Check 
-## Installation and Usage
-## Credits, Tools, and References
-## Questions
+###### Learning Objectives
+###### Development Process 
+###### User Story
+###### Summary of Topics Covered
+###### Comprehension Check 
+###### Installation and Usage
+###### Credits, Tools, and References
+###### Questions
 
 # Learning Objectives
 
